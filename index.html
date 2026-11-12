@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for kai ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="decorations" id="decorations"></div>
+
+  <!-- UNLOCK PAGE -->
+  <section class="screen active lavender-screen" id="unlockScreen">
+    <main class="unlock-wrap">
+      <div class="unlock-top-decoration">✿</div>
+
+      <div class="unlock-card">
+        <span class="unlock-eyebrow">a little place made for you</span>
+
+        <div class="unlock-heart">♡</div>
+
+        <h1 class="unlock-heading">a little something<br>for <em>you.</em></h1>
+
+        <p class="unlock-description">
+          i've prepared something special for your birthday.
+          but first, there's a little code you need to enter.
+        </p>
+
+        <div class="unlock-divider">
+          <span></span>
+          <i>✿</i>
+          <span></span>
+        </div>
+
+        <label class="code-label">ENTER THE SECRET CODE</label>
+
+        <div class="pin-dots" id="pinDots">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <p class="error-message" id="errorMessage"></p>
+
+        <div class="keypad">
+          <button class="key" data-number="1">1</button>
+          <button class="key" data-number="2">2</button>
+          <button class="key" data-number="3">3</button>
+          <button class="key" data-number="4">4</button>
+          <button class="key" data-number="5">5</button>
+          <button class="key" data-number="6">6</button>
+          <button class="key" data-number="7">7</button>
+          <button class="key" data-number="8">8</button>
+          <button class="key" data-number="9">9</button>
+          <button class="key key-empty" disabled></button>
+          <button class="key" data-number="0">0</button>
+          <button class="key key-delete" id="deleteNumber">⌫</button>
+        </div>
+
+        <button class="unlock-button" id="unlockButton">
+          unlock me <span>♡</span>
+        </button>
+
+        <p class="unlock-footer">made with love, just for you</p>
+      </div>
+
+      <div class="unlock-bottom-decoration"> :> </div>
+    </main>
+  </section>
+
+  <!-- PAGE 1: GREETINGS -->
+  <section class="screen matcha-screen" id="greetingScreen">
+    <main class="panel greeting-panel">
+      <span class="eyebrow">your special day</span>
+
+      <div class="birthday-decoration">🎀</div>
+
+      <h1>happy birthday,<br><span>kai!</span></h1>
+
+      <p class="greeting-message">
+        today is all about you, and i hope this little corner brings a smile
+        to your face. i made this with a lot of thought, care, and love,
+        just so you could have something of your own to open on your special day.
+      </p>
+
+      <p class="greeting-message">
+        i hope your day is filled with the things that make you happy,
+        the people who make you feel loved, and little moments worth remembering.
+      </p>
+
+      <p class="signature">you deserve all the good things, baby ♡</p>
+
+      <button class="primary-button" onclick="showScreen('collectionScreen')">
+        continue ♡
+      </button>
+    </main>
+  </section>
+
+  <!-- PAGE 2: COLLECTION -->
+  <section class="screen lavender-screen" id="collectionScreen">
+    <main class="panel collection-panel">
+      <span class="eyebrow">a few little things for you</span>
+
+      <h1>made with you in mind</h1>
+
+      <p class="subtitle">
+        three little pieces, each holding something i wanted you to read.
+      </p>
+
+      <div class="collection-list">
+        <button class="collection-card" onclick="openModal('poem')">
+          <span class="card-number">01</span>
+          <span class="card-content">
+            <strong>poem for her</strong>
+            <small>a few words, written just for you.</small>
+          </span>
+          <span class="card-arrow">↗</span>
+        </button>
+
+        <button class="collection-card" onclick="openModal('things')">
+          <span class="card-number">02</span>
+          <span class="card-content">
+            <strong>things i want you to know</strong>
+            <small>little reminders i hope you keep.</small>
+          </span>
+          <span class="card-arrow">↗</span>
+        </button>
+
+        <button class="collection-card" onclick="openModal('days')">
+          <span class="card-number">03</span>
+          <span class="card-content">
+            <strong>for the days ahead</strong>
+            <small>a little something for your new chapter.</small>
+          </span>
+          <span class="card-arrow">↗</span>
+        </button>
+      </div>
+
+      <button class="primary-button" onclick="showScreen('lettersScreen')">
+        read my love letters ♡
+      </button>
+    </main>
+  </section>
+
+  <!-- PAGE 3: LOVE LETTERS -->
+  <section class="screen matcha-screen" id="lettersScreen">
+    <main class="panel letters-panel">
+      <span class="eyebrow">a little piece of my heart</span>
+
+      <h1>love <em>letters.</em></h1>
+
+      <p class="subtitle">
+        some things are better written down. so here are a few words i wanted you to have.
+      </p>
+
+      <article class="letter-card">
+        <h2>dear kai,</h2>
+
+        <p>
+          i don't think words will ever be enough to explain how much i appreciate having you in my life. but since this is your special day, i wanted to take a little time to write down some of the things i don't always get to say.
+        </p>
+
+        <p>
+          i hope you know that you are someone worth celebrating. not just today, not just because it's your birthday, but even on the most ordinary days. the days when you feel like you haven't done enough, the days when things don't go according to plan, and the days when you simply need a little reminder that you're doing okay.
+        </p>
+
+        <p>
+          thank you for being you, bebe. i hope this new chapter gives you plenty of reasons to smile. you deserve good things, and i hope you never settle for less than the kindness you give to others.
+        </p>
+
+        <p>
+          i may not be able to put all these words on paper and hand them to you just yet, but i hope this little letter still makes you feel how much i mean every word of it. perhaps someday, you'll get to keep these words in a different form, something you can hold and read whenever you feel like it. until then, i hope this is enough to make your day a little more special. happy birthday once again, kai. i'm really glad i get to celebrate another year of your existence.
+        </p>
+
+        <p class="letter-signature">- A</p>
+      </article>
+
+      <article class="last-thing">
+        <h2>one last thing...</h2>
+
+        <p>
+          i hope life is gentle with you. i hope you always find your way
+          to happiness, and i hope you never run out of reasons to keep looking
+          forward.
+        </p>
+
+        <p class="final-wish">
+          happy birthday, my dear kai. ♡
+        </p>
+      </article>
+
+      <button class="secondary-button" onclick="showScreen('collectionScreen')">
+        ← go back
+      </button>
+
+      <div class="end-note">made with love, just for you ♡</div>
+    </main>
+  </section>
+
+  <!-- MODALS -->
+  <div class="modal-overlay" id="contentModal" onclick="closeModalOutside(event)">
+    <div class="modal-box">
+      <button class="close-button" onclick="closeModal()" aria-label="Close">×</button>
+      <span class="eyebrow" id="modalEyebrow">a little note</span>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-content" id="modalContent"></div>
+      <button class="primary-button modal-done" onclick="closeModal()">close ♡</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
